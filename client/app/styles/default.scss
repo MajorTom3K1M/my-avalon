@@ -1,0 +1,128 @@
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.s-sep {
+  width: calc(100% - 24px);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.s-sep__wing {
+  background: #d3d3d3;
+  height: 1px;
+  width: 100%;
+}
+
+.s-sep > span {
+  display: inline-block;
+}
+
+.s-sep__label {
+  margin: 0 8px;
+  white-space: nowrap;
+}
+
+.layout-bg {
+  background: url("../../assets/img/bg.jpg") no-repeat 50% fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.layout-guild-bg {
+  background: url("../../assets/img/guild.jpg") no-repeat 50% fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.layout-quest-bg {
+  background: url("../../assets/img/quest.jpg") no-repeat 50% fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mn-player-avatar-wrapper {
+  line-height: 0;
+  margin-left: 4px;
+  height: 24px;
+  width: 24px;
+}
+
+.mn-player-avatar-wrapper-shifted-left {
+  border-color: #fff;
+  border-radius: 50%;
+  margin-left: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.player-avatar {
+  position: relative;
+  padding: 24px 24px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.mn-player-avatar {
+  padding: 0 !important;
+}
+
+.player-avatar-background,
+.player-avatar-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) translateZ(0);
+  transform: translate(-50%, -50%) translateZ(0);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.player-avatar-background {
+  background: url(../../assets/img/avatar-frame.b6ea326c.png) 50% no-repeat;
+  background-size: contain;
+}
+
+.player-avatar__avatar {
+  width: 70%;
+  height: 70%;
+}
+
+.player-avatar__avatar,
+.player-avatar__minion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  background: no-repeat 50%;
+  background-size: contain;
+}
