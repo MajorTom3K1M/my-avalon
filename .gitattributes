@@ -1,4 +1,4 @@
-dist/*
-client/app/styles/*.css
-client/app/styles/*.scss
-client/app/styles/vendor/*.css
+dist/* linguist-generated
+client/app/styles/*.css linguist-generated
+client/app/styles/*.scss linguist-generated
+client/app/styles/vendor/*.css linguist-generated
