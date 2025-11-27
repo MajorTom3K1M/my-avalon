@@ -1,3 +1,4 @@
 dist/*
 client/app/styles/*.css
 client/app/styles/*.scss
+client/app/styles/vendor/*.css
